@@ -43,6 +43,7 @@ function createDropdown()
 	// add docs button
 	var translateDiv = document.createElement('div');
 	translateDiv.id = "google_translate_element";
+	translateDiv.className = "version-dropdown";
 	versionDropDiv.parentNode.appendChild(translateDiv);
 	
 	// include dropdown script

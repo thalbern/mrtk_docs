@@ -22,7 +22,7 @@ function createDropdown()
 			currentVersionName = versionArray[i];
 			
 			// remember if our current version is also the default 
-			if (currentVersionName.localCompare(defaultTitle) == 0)
+			if (currentVersionName.localeCompare(defaultTitle) == 0)
 			{
 				isDefaultInVersionFolder = true;
 			}

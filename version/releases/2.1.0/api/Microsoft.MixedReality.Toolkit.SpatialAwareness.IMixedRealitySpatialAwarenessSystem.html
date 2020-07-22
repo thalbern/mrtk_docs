@@ -12,7 +12,7 @@
    | Mixed Reality Toolkit Documentation ">
     <meta name="generator" content="docfx 2.48.1.0">
     
-    <link rel="shortcut icon" href="../../../Documentation/Images/favicon.ico">
+    <link rel="shortcut icon" href=".././Documentation/Images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../../../Documentation/Images/mrt_logo_icon.png" alt="">
+                <img id="logo" class="svg" src=".././Documentation/Images/mrt_logo_icon.png" alt="">
               </a>
             </div>
           
@@ -225,6 +225,7 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">void ClearObservations&lt;T&gt;(string name = null)
+
     where T : IMixedRealitySpatialAwarenessObserver</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -399,6 +400,7 @@ IMixedRealitySpatialAwarenessObserver GetObserver(string name)</code></pre>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Obsolete(&quot;GetObserver&lt;T&gt; will be removed in a future release. Cast to IMixedRealityDataProviderAccess and call GetDataProvider&lt;T&gt; instead&quot;)]
 T GetObserver&lt;T&gt;(string name = null)
+
     where T : IMixedRealitySpatialAwarenessObserver</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -493,6 +495,7 @@ IReadOnlyList&lt;IMixedRealitySpatialAwarenessObserver&gt; GetObservers()</code>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Obsolete(&quot;GetObservers&lt;T&gt; will be removed in a future release. Cast to IMixedRealityDataProviderAccess and call GetDataProviders&lt;T&gt; instead&quot;)]
 IReadOnlyList&lt;T&gt; GetObservers&lt;T&gt;()
+
     where T : IMixedRealitySpatialAwarenessObserver</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
@@ -537,6 +540,7 @@ IReadOnlyList&lt;T&gt; GetObservers&lt;T&gt;()
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">void ResumeObserver&lt;T&gt;(string name)
+
     where T : IMixedRealitySpatialAwarenessObserver</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -594,6 +598,7 @@ IReadOnlyList&lt;T&gt; GetObservers&lt;T&gt;()
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">void ResumeObservers&lt;T&gt;()
+
     where T : IMixedRealitySpatialAwarenessObserver</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
@@ -622,6 +627,7 @@ IReadOnlyList&lt;T&gt; GetObservers&lt;T&gt;()
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">void SuspendObserver&lt;T&gt;(string name)
+
     where T : IMixedRealitySpatialAwarenessObserver</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -679,6 +685,7 @@ IReadOnlyList&lt;T&gt; GetObservers&lt;T&gt;()
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">void SuspendObservers&lt;T&gt;()
+
     where T : IMixedRealitySpatialAwarenessObserver</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>

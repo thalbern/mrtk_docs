@@ -10,7 +10,7 @@
     <meta name="title" content="Performance | Mixed Reality Toolkit Documentation ">
     <meta name="generator" content="docfx 2.48.1.0">
     
-    <link rel="shortcut icon" href="../../../../Documentation/Images/favicon.ico">
+    <link rel="shortcut icon" href="../.././Documentation/Images/favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
@@ -35,7 +35,7 @@
               </button>
               
               <a class="navbar-brand" href="../../index.html">
-                <img id="logo" class="svg" src="../../../../Documentation/Images/mrt_logo_icon.png" alt="">
+                <img id="logo" class="svg" src="../.././Documentation/Images/mrt_logo_icon.png" alt="">
               </a>
             </div>
           
@@ -91,16 +91,16 @@
 <h5>Note</h5>
 <p>If building for Windows Mixed Reality, deploy with <a href="https://docs.microsoft.com/windows/mixed-reality/exporting-and-building-a-unity-visual-studio-solution#building_and_deploying_a_unity_visual_studio_solution">MASTER configuration builds</a></p>
 </div>
-<p><img src="../../Documentation/Images/Diagnostics/VisualProfiler.png" alt="Visual Profiler Interface"></p>
+<p><img src="../Images/Diagnostics/VisualProfiler.png" alt="Visual Profiler Interface"></p>
 <h3 id="optimize-window">Optimize window</h3>
 <p>The <a href="../Tools/OptimizeWindow.html">MRTK Optimize Window</a> offers information and automation tools to help mixed reality developers set up their environment for the best performing results and identify potential bottlenecks in their scene &amp; assets. Certain key configurations in Unity can help deliver substantially more optimized results for mixed reality projects.</p>
 <p>Generally, these settings involve rendering configurations that are ideal for mixed reality. Mixed reality applications are unique compared to traditional 3D graphics development in that there are two screens (i.e two eyes) to render for the entire scene.</p>
 <p>The recommended settings referenced below can be auto-configured in a Unity project by leveraging the MRTK Optimize Window.</p>
-<p><img src="../../Documentation/Images/Performance/OptimizeWindow_Settings.png" alt="MRTK Optimize Window Settings"></p>
+<p><img src="../Images/Performance/OptimizeWindow_Settings.png" alt="MRTK Optimize Window Settings"></p>
 <h3 id="unity-profiler">Unity Profiler</h3>
 <p>The <a href="https://docs.unity3d.com/Manual/ProfilerWindow.html">Unity Profiler</a> is a useful tool to investigate details of application performance at a frame-by-frame level.</p>
 <h4 id="time-spent-on-the-cpu">Time spent on the CPU</h4>
-<p><img src="../../Documentation/Images/Performance/UnityProfilerGraph.png" alt="Example Unity Profiler Graph"></p>
+<p><img src="../Images/Performance/UnityProfilerGraph.png" alt="Example Unity Profiler Graph"></p>
 <p>To maintain comfortable frame rates (typically 60 frames per second), applications need to achieve a maximum frame time of 16.6 milliseconds of CPU time. To help identify the cost of MRTK functionality, the Microsoft Mixed Reality Toolkit contains a markers for inner loop (per frame) code paths. These markers use the following format, to assist in understanding the specific functionality being utilized:</p>
 <pre><code>[MRTK] className.methodName
 </code></pre>
@@ -108,7 +108,7 @@
 <h5>Note</h5>
 <p>There may be additional data following the method name. This is used to identify conditionally executed, potentially expensive functionality that may be avoided by small changes to application code.</p>
 </div>
-<p><img src="../../Documentation/Images/Performance/UnityProfilerHierarchy.png" alt="Example Unity Profiler Hierarchy"></p>
+<p><img src="../Images/Performance/UnityProfilerHierarchy.png" alt="Example Unity Profiler Hierarchy"></p>
 <p>In this example, the hierarchy has been expanded to show that the UpdateHandData method of WindowsMixedRealityArticulatedHand class is consuming 0.44 ms of CPU time during the frame being analyzed. This data can be used to help determine if a performance issue is related to application code or from elsewhere in the system.</p>
 <p>It is highly recommended that developers instrument application code in a similar fashion. Primary areas of focus for application code instrumentation is within event handlers as these methods are charged to the MRTK update loop as events are raised. High frame times within the MRTK update loop can be indicative of expensive code in event handler methods.</p>
 <h2 id="recommended-settings-for-unity">Recommended settings for Unity</h2>
@@ -248,9 +248,9 @@ private void ChangeColor()
 </ul>
 <p>If estimating the rough performance tradeoff between one shader and another, it is useful to compile each shader and view the number of operations per shader stage. This can be done by selecting a <a href="https://docs.unity3d.com/Manual/class-Shader.html">shader asset</a> and clicking the <em>Compile and show code</em> button. This will compile all the shader variants and open visual studio with the results. Note: The statistic results produced may vary depending on what features have been enabled on materials utilizing the given shader. Unity will only compile the shader variants being directly used in the current project.</p>
 <p>Unity Standard shader statistics example</p>
-<p><img src="../../Documentation/Images/Performance/UnityStandardShader-Stats.PNG" alt="Unity Standard Shader Statistics"></p>
+<p><img src="../Images/Performance/UnityStandardShader-Stats.PNG" alt="Unity Standard Shader Statistics"></p>
 <p>MRTK Standard shader statistics example</p>
-<p><img src="../../Documentation/Images/Performance/MRTKStandardShader-Stats.PNG" alt="MRTK Standard Shader Statistics"></p>
+<p><img src="../Images/Performance/MRTKStandardShader-Stats.PNG" alt="MRTK Standard Shader Statistics"></p>
 <h2 id="see-also">See also</h2>
 <h3 id="unity">Unity</h3>
 <ul>

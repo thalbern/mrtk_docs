@@ -10,7 +10,7 @@
     <meta name="title" content="Speech | Mixed Reality Toolkit Documentation ">
     <meta name="generator" content="docfx 2.48.1.0">
     
-    <link rel="shortcut icon" href="../../../../Documentation/Images/favicon.ico">
+    <link rel="shortcut icon" href="../.././Documentation/Images/favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
@@ -35,7 +35,7 @@
               </button>
               
               <a class="navbar-brand" href="../../index.html">
-                <img id="logo" class="svg" src="../../../../Documentation/Images/mrt_logo_icon.png" alt="">
+                <img id="logo" class="svg" src="../.././Documentation/Images/mrt_logo_icon.png" alt="">
               </a>
             </div>
           
@@ -82,23 +82,23 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="speech">Speech</h1>
 
-<p><img src="../../Documentation/Images/Input/MRTK_Input_Speech.png" alt="Near Menu"></p>
+<p><img src="../Images/Input/MRTK_Input_Speech.png" alt="Near Menu"></p>
 <p>Speech input providers, like <em>Windows Speech Input</em>, don't create any controllers but instead allow you to define keywords that will raise speech input events when recognized. The <strong>Speech Commands Profile</strong> in the <em>Input System Profile</em> is where you configure the keywords to recognize. For each command you can also:</p>
 <ul>
 <li>Select an <strong>input action</strong> to map it to. This way you can for example use the keyword <em>Select</em> to have the same effect as a left mouse click, by mapping both to the same action.</li>
 <li>Specify a <strong>key code</strong> that will produce the same speech event when pressed.</li>
 <li>Add a <strong>localization key</strong> that will be used in UWP apps to obtain the localized keyword from the app resources.</li>
 </ul>
-<img src="../../Documentation/Images/Input/SpeechCommandsProfile.png" width="450px">
+<img src="../Images/Input/SpeechCommandsProfile.png" width="450px">
 <h2 id="handling-speech-input">Handling speech input</h2>
 <p>The <a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.SpeechInputHandler.html"><strong><code>Speech Input Handler</code></strong></a> script can be added to a GameObject to handle speech commands using <a href="https://docs.unity3d.com/Manual/UnityEvents.html"><strong>UnityEvents</strong></a>. It automatically shows the list of the defined keywords from the <strong>Speech Commands Profile</strong>.</p>
-<img src="../../Documentation/Images/Input/SpeechCommands_SpeechInputHandler1.png" width="450px">
+<img src="../Images/Input/SpeechCommands_SpeechInputHandler1.png" width="450px">
 <p>Assign optional <strong>SpeechConfirmationTooltip.prefab</strong> to display animated confirmation tooltip label on recognition.</p>
-<img src="../../Documentation/Images/Input/SpeechCommands_SpeechInputHandler2.png">
+<img src="../Images/Input/SpeechCommands_SpeechInputHandler2.png">
 <p>Alternatively, developers can implement the <a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler.html"><code>IMixedRealitySpeechHandler</code></a> interface in a custom script component to <a href="InputEvents.html#input-event-interface-example">handle speech input events</a>.</p>
 <h2 id="example-scene">Example scene</h2>
 <p>The <strong>SpeechInputExample</strong> scene, in <code>MRTK/Examples/Demos/Input/Scenes/Speech</code>, shows how to use speech. You can also listen to speech command events directly in your own script by implementing <a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler.html"><code>IMixedRealitySpeechHandler</code></a> (see table of <a href="InputEvents.html">event handlers</a>).</p>
-<img src="../../Documentation/Images/Input/SpeechExampleScene.png" width="750px">
+<img src="../Images/Input/SpeechExampleScene.png" width="750px">
 </article>
           </div>
           

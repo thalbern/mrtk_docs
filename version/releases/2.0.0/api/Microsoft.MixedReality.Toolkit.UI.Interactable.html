@@ -12,7 +12,7 @@
    | Mixed Reality Toolkit Documentation ">
     <meta name="generator" content="docfx 2.48.1.0">
     
-    <link rel="shortcut icon" href="../../../Documentation/Images/favicon.ico">
+    <link rel="shortcut icon" href=".././Documentation/Images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../../../Documentation/Images/mrt_logo_icon.png" alt="">
+                <img id="logo" class="svg" src=".././Documentation/Images/mrt_logo_icon.png" alt="">
               </a>
             </div>
           
@@ -1624,6 +1624,7 @@ events at runtime. This method allows receivers to be dynamically added at runti
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public T AddReceiver&lt;T&gt;()
+
     where T : ReceiverBase, new()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
@@ -1871,6 +1872,7 @@ or null if nothing is found.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public T GetReceiver&lt;T&gt;()
+
     where T : ReceiverBase</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
@@ -1914,6 +1916,7 @@ If nothing is found, returns empty list.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public List&lt;T&gt; GetReceivers&lt;T&gt;()
+
     where T : ReceiverBase</code></pre>
   </div>
   <h5 class="returns">Returns</h5>

@@ -10,7 +10,7 @@
     <meta name="title" content="Pointers | Mixed Reality Toolkit Documentation ">
     <meta name="generator" content="docfx 2.48.1.0">
     
-    <link rel="shortcut icon" href="../../../../Documentation/Images/favicon.ico">
+    <link rel="shortcut icon" href="../.././Documentation/Images/favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
@@ -35,7 +35,7 @@
               </button>
               
               <a class="navbar-brand" href="../../index.html">
-                <img id="logo" class="svg" src="../../../../Documentation/Images/mrt_logo_icon.png" alt="">
+                <img id="logo" class="svg" src="../.././Documentation/Images/mrt_logo_icon.png" alt="">
               </a>
             </div>
           
@@ -82,7 +82,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="pointers">Pointers</h1>
 
-<p><img src="../../Documentation/Images/Pointers/MRTK_Pointer_Main.png" alt="Pointer"></p>
+<p><img src="../Images/Pointers/MRTK_Pointer_Main.png" alt="Pointer"></p>
 <p>This article explains how to configure and respond to Pointer input in practice, compared to <a href="../Architecture/InputSystem/ControllersPointersAndFocus.html">Pointer Architecture</a></p>
 <p>Pointers are instanced automatically at runtime when a new controller is detected. More than one pointer can be attached to a controller. For example, with the default pointer profile, Windows Mixed Reality controllers get both a line and a parabolic pointer for normal selection and teleportation respectively.</p>
 <h2 id="pointer-configuration">Pointer configuration</h2>
@@ -127,7 +127,7 @@ the articulated hand controller is associated with the <em>PokePointer</em>, <em
 <h5 id="linepointer"><a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.LinePointer.html"><code>LinePointer</code></a></h5>
 <p><em>LinePointer</em>, a base pointer class, draws a line from the source of the input (i.e. the controller) in the pointer direction and supports a single ray cast in this direction. Generally, children classes such as the <a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.ShellHandRayPointer.html"><code>ShellHandRayPointer</code></a> and the teleport pointers are instantiated and utilized (which also draw lines to indicate where teleportation will end up at) instead of this class which primarily provides common functionality.</p>
 <p>For motion controllers like in Oculus, Vive, and Windows Mixed Reality, the rotation will match the rotation of the controller. For other controllers like HoloLens 2 articulated hands, the rotation matches the system-provided pointing pose of the hand.</p>
-<img src="../../Documentation/Images/Pointers/MRTK_Pointers_Line.png" width="400">
+<img src="../Images/Pointers/MRTK_Pointers_Line.png" width="400">
 <h5 id="curvepointer"><a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.CurvePointer.html"><code>CurvePointer</code></a></h5>
 <p><em>CurvePointer</em> extends the <em>LinePointer</em> class by allowing for multi-step ray casts along a curve. This base pointer class is useful for curved instances such as teleportation pointers where the line consistently bends into a parabola.</p>
 <h5 id="shellhandraypointer"><a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.ShellHandRayPointer.html"><code>ShellHandRayPointer</code></a></h5>
@@ -138,7 +138,7 @@ the articulated hand controller is associated with the <em>PokePointer</em>, <em
 <p>The <em>TouchPointer</em> is responsible for working with Unity Touch input (i.e. touchscreen). These are 'far interactions' because the act of touching the screen will cast a ray from the camera to a potentially far location in the scene.</p>
 <h5 id="mousepointer"><a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.MousePointer.html"><code>MousePointer</code></a></h5>
 <p>The <em>MousePointer</em> powers a screen to world raycast for far interactions, but for mouse instead of touch.</p>
-<p><img src="../../Documentation/Images/Pointers/MRTK_MousePointer.png" alt="Mouse pointer"></p>
+<p><img src="../Images/Pointers/MRTK_MousePointer.png" alt="Mouse pointer"></p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>Mouse support is not available by default in MRTK but can be enabled by adding a new <em>Input Data Provider</em> of type <a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.UnityInput.MouseDeviceManager.html"><code>MouseDeviceManager</code></a> to the MRTK input profile and assigning the <a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.MixedRealityMouseInputProfile.html"><code>MixedRealityMouseInputProfile</code></a> to the data provider.</p>
@@ -154,10 +154,10 @@ the articulated hand controller is associated with the <em>PokePointer</em>, <em
 <li><em>Line</em>: Optional line to draw from fingertip to the active input surface.</li>
 <li><em>Poke Layer Masks</em> - A prioritized array of LayerMasks to determine which possible GameObjects the pointer can interact with and the order of interaction to attempt. Note that a GameObject must also have a <code>NearInteractionTouchable</code> component in order to interact with a poke pointer.</li>
 </ul>
-<img src="../../Documentation/Images/Pointers/MRTK_PokePointer.png" width="400">
+<img src="../Images/Pointers/MRTK_PokePointer.png" width="400">
 <h5 id="spherepointer"><a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.SpherePointer.html"><code>SpherePointer</code></a></h5>
 <p>The <em><a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.SpherePointer.html">SpherePointer</a></em> uses <a href="https://docs.unity3d.com/ScriptReference/Physics.OverlapSphere.html">UnityEngine.Physics.OverlapSphere</a> in order to identify the closest <a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.NearInteractionGrabbable.html"><code>NearInteractionGrabbable</code></a> object for interaction, which is useful for &quot;grabbable&quot; input like the <code>ManipulationHandler</code>. Similar to the <a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.PokePointer.html"><code>PokePointer</code></a>/<a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable.html"><code>NearInteractionTouchable</code></a> functional pair, in order to be interactable with the Sphere Pointer, the game object must contain a component that is the <a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.NearInteractionGrabbable.html"><code>NearInteractionGrabbable</code></a> script.</p>
-<img src="../../Documentation/Images/Pointers/MRTK_GrabPointer.jpg" width="400">
+<img src="../Images/Pointers/MRTK_GrabPointer.jpg" width="400">
 <p>Useful Sphere Pointer properties:</p>
 <ul>
 <li><em>Sphere Cast Radius</em>: The radius for the sphere used to query for grabbable objects.</li>
@@ -177,13 +177,13 @@ the articulated hand controller is associated with the <em>PokePointer</em>, <em
 This can prevent accidental grabs, and will allow hand rays to turn on when you may be near
 a grabbable but cannot see it. The <em>Visual FOV</em> is defined via a cone instead of the the typical frustum for performance reasons. This cone is centered and oriented the same as the camera's frustum with a radius equal to half display height(or vertical FOV).</li>
 </ul>
-<img src="../../Documentation/Images/Input/Pointers/SpherePointer_VisualFOV.png" width="200">
+<img src="../Images/Input/Pointers/SpherePointer_VisualFOV.png" width="200">
 <h4 id="teleport-pointers">Teleport pointers</h4>
 <ul>
 <li><a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Teleport.TeleportPointer.html"><code>TeleportPointer</code></a> will raise a teleport request when action is taken (i.e the teleport button is pressed) in order to move the user.</li>
 <li><a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Teleport.ParabolicTeleportPointer.html"><code>ParabolicTeleportPointer</code></a> will raise a teleport request when action is taken (i.e the teleport button is pressed) with a parabolic line raycast in order to move the user.</li>
 </ul>
-<img src="../../Documentation/Images/Pointers/MRTK_Pointers_Parabolic.png" width="400">
+<img src="../Images/Pointers/MRTK_Pointers_Parabolic.png" width="400">
 <h2 id="pointer-support-for-mixed-reality-platforms">Pointer support for mixed reality platforms</h2>
 <p>The following table details the pointer types that are typically used for the common platforms in MRTK. NOTE:
 it's possible to add different pointer types to these platforms. For example, you could add a Poke pointer or Sphere pointer to VR. Additionally, VR devices with a gamepad could use the GGV pointer.</p>
@@ -366,7 +366,7 @@ private void OnDisable()
 }
 </code></pre>
 <p>The <code>PrimaryPointerExample</code> (Assets/MRTK/Examples/Demos/Input/Scenes/PrimaryPointer) scene shows how to use the <a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.PrimaryPointerChangedHandler.html"><code>PrimaryPointerChangedHandler</code></a> for events to respond to a new primary pointer.</p>
-<img src="../../Documentation/Images/Pointers/PrimaryPointerExample.png" style="max-width:100%;">
+<img src="../Images/Pointers/PrimaryPointerExample.png" style="max-width:100%;">
 <h3 id="pointer-result">Pointer result</h3>
 <p>The pointer <a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointer.html#Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointer_Result"><code>Result</code></a> property contains the current result for the scene query used to determine the object with focus. For a raycast pointer, like the ones created by default for motion controllers, gaze input and hand rays, it will contain the location and normal of the raycast hit.</p>
 <pre><code class="lang-c#">private void IMixedRealityPointerHandler.OnPointerClicked(MixedRealityPointerEventData eventData)
@@ -378,7 +378,7 @@ private void OnDisable()
 }
 </code></pre>
 <p>The <code>PointerResultExample</code> scene (Assets/MRTK/Examples/Demos/Input/Scenes/PointerResult/PointerResultExample.unity) shows how to use the pointer <a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointer.html#Microsoft_MixedReality_Toolkit_Input_IMixedRealityPointer_Result"><code>Result</code></a> to spawn an object at the hit location.</p>
-<img src="../../Documentation/Images/Input/PointerResultExample.png" style="max-width:100%;">
+<img src="../Images/Input/PointerResultExample.png" style="max-width:100%;">
 <h3 id="disable-pointers">Disable pointers</h3>
 <p>To turn enable and disable pointers (for example, to disable the hand ray), set the <a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.PointerBehavior.html"><code>PointerBehavior</code></a> for a given pointer type via <a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.PointerUtils.html"><code>PointerUtils</code></a>.</p>
 <pre><code class="lang-c#">// Disable the hand rays
@@ -403,7 +403,7 @@ public void SetHoloLens1()
 <p>See <a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.PointerUtils.html"><code>PointerUtils</code></a> and <a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Examples.Demos.DisablePointersExample.html"><code>TurnPointersOnOff</code></a> for more examples.</p>
 <h2 id="pointer-interactions-via-editor">Pointer interactions via editor</h2>
 <p>For pointer events handled by <a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointerHandler.html"><code>IMixedRealityPointerHandler</code></a>, MRTK provides further convenience in the form of the <a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.PointerHandler.html"><code>PointerHandler</code></a> component, which allows pointer events to be handled directly via Unity Events.</p>
-<img src="../../Documentation/Images/Pointers/PointerHandler.png" style="max-width:100%;">
+<img src="../Images/Pointers/PointerHandler.png" style="max-width:100%;">
 <h2 id="pointer-extent">Pointer extent</h2>
 <p>Far pointers have settings which limit how far they will raycast and interact with other objects in the scene.
 By default, this value is set to 10 meters. This value was chosen to remain consistent with the behavior

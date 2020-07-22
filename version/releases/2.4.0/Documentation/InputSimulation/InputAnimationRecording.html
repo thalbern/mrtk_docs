@@ -10,7 +10,7 @@
     <meta name="title" content="Input animation recording | Mixed Reality Toolkit Documentation ">
     <meta name="generator" content="docfx 2.48.1.0">
     
-    <link rel="shortcut icon" href="../../../../Documentation/Images/favicon.ico">
+    <link rel="shortcut icon" href="../.././Documentation/Images/favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
@@ -35,7 +35,7 @@
               </button>
               
               <a class="navbar-brand" href="../../index.html">
-                <img id="logo" class="svg" src="../../../../Documentation/Images/mrt_logo_icon.png" alt="">
+                <img id="logo" class="svg" src="../.././Documentation/Images/mrt_logo_icon.png" alt="">
               </a>
             </div>
           
@@ -97,8 +97,8 @@ See <a href="#input-recording-service">Input Recording Service</a>.</li>
 <p>Two input system services are provided to record and play back input respectively.</p>
 <h3 id="input-recording-service">Input recording service</h3>
 <p><a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.InputRecordingService.html"><code>InputRecordingService</code></a> takes data from the main camera transform and active hand controllers and stores it in an internal buffer. When requested this data is then serialized into binary files for storage and later replay.</p>
-<a target="_blank" href="../../Documentation/Images/InputSimulation/MRTK_InputAnimation_RecordingDiagram.png">
-  <img src="../../Documentation/Images/InputSimulation/MRTK_InputAnimation_RecordingDiagram.png" title="Recording input animation" width="80%" class="center">
+<a target="_blank" href="../Images/InputSimulation/MRTK_InputAnimation_RecordingDiagram.png">
+  <img src="../Images/InputSimulation/MRTK_InputAnimation_RecordingDiagram.png" title="Recording input animation" width="80%" class="center">
 </a>
 <p>To start recording input call the <a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputRecordingService.html#Microsoft_MixedReality_Toolkit_Input_IMixedRealityInputRecordingService_StartRecording"><code>StartRecording</code></a> function. <a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputRecordingService.html#Microsoft_MixedReality_Toolkit_Input_IMixedRealityInputRecordingService_StopRecording"><code>StopRecording</code></a> will pause recording (but not discard the data recorded so far, use <a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputRecordingService.html#Microsoft_MixedReality_Toolkit_Input_IMixedRealityInputRecordingService_DiscardRecordedInput"><code>DiscardRecordedInput</code></a> to do this if needed).</p>
 <p>By default the size of the recording buffer is limited to 30 seconds. This allows the recording service to keep recording in the background without accumulating too much data, and then save the last 30 seconds when required. The time interval can be changed using the <a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputRecordingService.html#Microsoft_MixedReality_Toolkit_Input_IMixedRealityInputRecordingService_RecordingBufferTimeLimit"><code>RecordingBufferTimeLimit</code></a> property, or recording can be unlimited using the <a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputRecordingService.html#Microsoft_MixedReality_Toolkit_Input_IMixedRealityInputRecordingService_UseBufferTimeLimit"><code>UseBufferTimeLimit</code></a> option.</p>
@@ -106,8 +106,8 @@ See <a href="#input-recording-service">Input Recording Service</a>.</li>
 <p>For details on the binary file format see <a href="InputAnimationFileFormat.html">Input Animation File Format Specification</a>.</p>
 <h3 id="input-playback-service">Input playback service</h3>
 <p><a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.InputPlaybackService.html"><code>InputPlaybackService</code></a> reads a binary file with input animation data and then applies this data through the <a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.InputSimulationService.html">InputSimulationService</a> to recreate the recorded movements.</p>
-<a target="_blank" href="../../Documentation/Images/InputSimulation/MRTK_InputAnimation_PlaybackDiagram.png">
-  <img src="../../Documentation/Images/InputSimulation/MRTK_InputAnimation_PlaybackDiagram.png" title="Playing back input animation" width="80%" class="center">
+<a target="_blank" href="../Images/InputSimulation/MRTK_InputAnimation_PlaybackDiagram.png">
+  <img src="../Images/InputSimulation/MRTK_InputAnimation_PlaybackDiagram.png" title="Playing back input animation" width="80%" class="center">
 </a>
 <p>To start playing back input animation it should be loaded from a file using the <a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputPlaybackService.html#Microsoft_MixedReality_Toolkit_Input_IMixedRealityInputPlaybackService_LoadInputAnimation_">LoadInputAnimation</a> function.</p>
 <p>Call <a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputPlaybackService.html#Microsoft_MixedReality_Toolkit_Input_IMixedRealityInputPlaybackService_Play">Play</a>, <a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputPlaybackService.html#Microsoft_MixedReality_Toolkit_Input_IMixedRealityInputPlaybackService_Play">Pause</a>, or <a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputPlaybackService.html#Microsoft_MixedReality_Toolkit_Input_IMixedRealityInputPlaybackService_Stop">Stop</a> to control the animation playback.</p>

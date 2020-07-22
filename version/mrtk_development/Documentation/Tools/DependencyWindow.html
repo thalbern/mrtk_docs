@@ -10,7 +10,7 @@
     <meta name="title" content="Dependency window | Mixed Reality Toolkit Documentation ">
     <meta name="generator" content="docfx 2.48.1.0">
     
-    <link rel="shortcut icon" href="../../../../Documentation/Images/favicon.ico">
+    <link rel="shortcut icon" href="../.././Documentation/Images/favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
@@ -35,7 +35,7 @@
               </button>
               
               <a class="navbar-brand" href="../../index.html">
-                <img id="logo" class="svg" src="../../../../Documentation/Images/mrt_logo_icon.png" alt="">
+                <img id="logo" class="svg" src="../.././Documentation/Images/mrt_logo_icon.png" alt="">
               </a>
             </div>
           
@@ -86,10 +86,10 @@
 <p>The Dependency Window displays how assets reference and depend on each other. Dependencies are calculated by parsing guids within project YAML files (note, script to script dependencies are not considered).</p>
 <h2 id="usage">Usage</h2>
 <p>To open the window, select <em>Mixed Reality Toolkit-&gt;Utilities-&gt;Dependency Window</em> which will open the window and automatically begin building your project's dependency graph. Once the dependency graph is built, you can select assets in the project tab to inspect their dependencies.</p>
-<p><img src="../../Documentation/Images/DependencyWindow/MRTK_Dependency_Window.png" alt="Dependency window"></p>
+<p><img src="../Images/DependencyWindow/MRTK_Dependency_Window.png" alt="Dependency window"></p>
 <p>The window displays a list of assets that the currently selected asset depends on, and a hierarchical list of assets that depend on it. If nothing depends on the currently selected asset, you can consider deleting it from your project (note that some assets are loaded programmatically via APIs like Shader.Find() and may not be caught by the dependency tracker).</p>
 <p>The window can also display just a list of all assets which are not referenced by any other assets and could be considered for deletion:</p>
-<p><img src="../../Documentation/Images/DependencyWindow/MRTK_Dependency_Window_Unreferenced.png" alt="Dependency window showing unreferenced assets"></p>
+<p><img src="../Images/DependencyWindow/MRTK_Dependency_Window_Unreferenced.png" alt="Dependency window showing unreferenced assets"></p>
 <div class="NOTE">
 <h5>Note</h5>
 <p>If assets are modified, added, or removed while the dependency window is in use, it is advised to refresh the dependency graph for the most &quot;up to date&quot; results.</p>

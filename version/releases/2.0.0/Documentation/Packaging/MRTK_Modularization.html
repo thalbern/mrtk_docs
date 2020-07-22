@@ -10,7 +10,7 @@
     <meta name="title" content="Mixed Reality Toolkit componentization | Mixed Reality Toolkit Documentation ">
     <meta name="generator" content="docfx 2.48.1.0">
     
-    <link rel="shortcut icon" href="../../../../Documentation/Images/favicon.ico">
+    <link rel="shortcut icon" href="../.././Documentation/Images/favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
@@ -35,7 +35,7 @@
               </button>
               
               <a class="navbar-brand" href="../../index.html">
-                <img id="logo" class="svg" src="../../../../Documentation/Images/mrt_logo_icon.png" alt="">
+                <img id="logo" class="svg" src="../.././Documentation/Images/mrt_logo_icon.png" alt="">
               </a>
             </div>
           
@@ -93,7 +93,7 @@ between them. The same is true for SDK features (ex: User Interface components).
 <p>To ensure that there are no direct links between components, MRTK v2 utilizes interfaces to communicate between
 services, data providers and application code. These interfaces are defined in and all communication is routed
 through the Mixed Reality Toolkit core component.</p>
-<p><img src="../../Documentation/Images/Packaging/AccessingViaInterfaces.png" alt="Using the spatial awareness system via interfaces"></p>
+<p><img src="../Images/Packaging/AccessingViaInterfaces.png" alt="Using the spatial awareness system via interfaces"></p>
 <h2 id="minimizing-mrtk-import-footprint">Minimizing MRTK import footprint</h2>
 <p>At this moment, the MRTK is imported as a single foundation package (ignoring for a moment the existence of the examples package, which is a completely optional package). It is possible to make this footprint smaller by manually cutting down on the files imported, though this is a highly manual process which doesn't have a well-defined guide.</p>
 <p>It is possible to uncheck arbitrary items during the import of the Foundation package. However, it's not recommended to do this at an early stage in development as it might break functionality. After having figured out the final feature set of an app, pruning unneeded providers and services can be done on the following folders:</p>

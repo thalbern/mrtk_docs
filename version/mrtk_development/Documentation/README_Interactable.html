@@ -10,7 +10,7 @@
     <meta name="title" content="Interactable | Mixed Reality Toolkit Documentation ">
     <meta name="generator" content="docfx 2.48.1.0">
     
-    <link rel="shortcut icon" href="../../../Documentation/Images/favicon.ico">
+    <link rel="shortcut icon" href=".././Documentation/Images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -35,7 +35,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../../../Documentation/Images/mrt_logo_icon.png" alt="">
+                <img id="logo" class="svg" src=".././Documentation/Images/mrt_logo_icon.png" alt="">
               </a>
             </div>
           
@@ -82,7 +82,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="interactable">Interactable</h1>
 
-<p><img src="../Documentation/Images/Interactable/InteractableExamples.png" alt="Interactable"></p>
+<p><img src="Images/Interactable/InteractableExamples.png" alt="Interactable"></p>
 <p>The <a class="xref" href="../api/Microsoft.MixedReality.Toolkit.UI.Interactable.html"><code>Interactable</code></a> component is an all-in-one container to make any object easily <em>interactable</em> and responsive to input. Interactable acts as a catch-all for all types of input including touch, hand rays, speech etc and funnel these interactions into <a href="#events">events</a> and <a href="VisualThemes.html">visual theme</a> responses. This component provides an easy way to make buttons, change color on objects with focus, and more.</p>
 <h2 id="how-to-configure-interactable">How to configure Interactable</h2>
 <p>The component allows for three primary sections of configuration:</p>
@@ -152,7 +152,7 @@
 <p>Themes work a lot like materials. They are scriptable objects that contain a list of properties that will be assigned to an object based on the current state. Themes are also re-usable and can be assigned across multiple <em>Interactable</em> UX objects.</p>
 <p><strong>Reset On Destroy</strong></p>
 <p>Visual themes modify various properties on a targeted GameObject, dependent on the class and type of theme engine selected. If <em>Reset On Destroy</em> is true when the Interactable component is destroyed, the component will reset all modified properties from active themes to their original values. Otherwise, when destroyed, the Interactable component will leave any modified properties as-is. In this latter case, the last state of values will persist unless altered by another external component. The default is false.</p>
-<img src="../Documentation/Images/Interactable/Profiles_Themes.png" width="450">
+<img src="Images/Interactable/Profiles_Themes.png" width="450">
 <h2 id="events">Events</h2>
 <p>Every <em>Interactable</em> component has an <em>OnClick</em> event that fires when the component is simply selected. However, <em>Interactable</em> can be used to detect input events other than just <em>OnClick</em>.</p>
 <p>Click the <em>Add Event</em> button to add a new type of Event Receiver definition. Once added, select the type of Event desired.</p>
@@ -174,7 +174,7 @@
 <h3 id="interactable-receivers">Interactable receivers</h3>
 <p>The <a class="xref" href="../api/Microsoft.MixedReality.Toolkit.UI.InteractableReceiver.html"><code>InteractableReceiver</code></a> component allows for events to be defined outside of the source <em>Interactable</em> component. The <em>InteractableReceiver</em> will listen for a filtered event type fired by another <em>Interactable</em>. If the <em>Interactable</em> property is not directly assigned, then the <em>Search Scope</em> property defines the direction the <em>InteractableReceiver</em> listens for events which is either on itself, in a parent, or in a child GameObject.</p>
 <p><a class="xref" href="../api/Microsoft.MixedReality.Toolkit.UI.InteractableReceiverList.html"><code>InteractableReceiverList</code></a> acts in a similar fashion but for a list of matching events.</p>
-<img src="../Documentation/Images/Interactable/InteractableReceiver.png" width="450">
+<img src="Images/Interactable/InteractableReceiver.png" width="450">
 <h3 id="create-custom-events">Create custom events</h3>
 <p>Like <a href="VisualThemes.html#custom-theme-engines">Visual Themes</a>, events can be extended to detect any state pattern or to expose functionality.</p>
 <p>Custom events can be created in two main ways:</p>
@@ -256,7 +256,7 @@ bool isSelected = myInteractable.IsToggled;
 <li>Add all <em>Interactables</em> to the <em>ToggleList</em> on the <em>InteractableToggleCollection</em></li>
 <li>Set the <em>InteractableToggleCollection.CurrentIndex</em> property to determine which button is selected by default at start</li>
 </ol>
-<img src="../Documentation/Images/Interactable/InteractableToggleCollection.png" width="450">
+<img src="Images/Interactable/InteractableToggleCollection.png" width="450">
 <h4 id="multi-dimensional-button">Multi-dimensional button</h4>
 <p>Multi-Dimension selection mode is used to create sequential buttons, or a button that has more than two steps, like controlling speed with three values, Fast (1x), Faster (2x) or Fastest (3x).</p>
 <p>With dimensions being a numeric value, up to 9 themes can be added to control the text label or texture of the button for each speed setting, using a different theme for each of step.</p>

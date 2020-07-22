@@ -10,7 +10,7 @@
     <meta name="title" content="Optimize window | Mixed Reality Toolkit Documentation ">
     <meta name="generator" content="docfx 2.48.1.0">
     
-    <link rel="shortcut icon" href="../../../../Documentation/Images/favicon.ico">
+    <link rel="shortcut icon" href="../.././Documentation/Images/favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
@@ -35,7 +35,7 @@
               </button>
               
               <a class="navbar-brand" href="../../index.html">
-                <img id="logo" class="svg" src="../../../../Documentation/Images/mrt_logo_icon.png" alt="">
+                <img id="logo" class="svg" src="../.././Documentation/Images/mrt_logo_icon.png" alt="">
               </a>
             </div>
           
@@ -90,11 +90,11 @@
 <li><em>VR Standalone</em> are mobile-class devices, such as the Oculus Go or Quest</li>
 <li><em>VR Tethered</em> are PC-powered devices, such as the Samsung Odyssey, Oculus Rift or HTC Vive etc.</li>
 </ul>
-<p><img src="../../Documentation/Images/Performance/OptimizeWindowPerformanceTarget.jpg" alt="MRTK Optimize Window Performance Target"></p>
+<p><img src="../Images/Performance/OptimizeWindowPerformanceTarget.jpg" alt="MRTK Optimize Window Performance Target"></p>
 <h2 id="setting-optimizations">Setting optimizations</h2>
 <p>The settings optimization tab covers some of the important rendering configurations for a Unity project. This section can help automate and inform you of which settings should be changed for the best performing results.</p>
 <p>A green check icon means that an optimal value has been configured in the project/scene for this particular setting. A yellow warning icon indicates the current configuration can be improved. Clicking the associated button in a given section will auto-configure that setting in the Unity project/scene to a more optimal value.</p>
-<p><img src="../../Documentation/Images/Performance/OptimizeWindow_Settings.png" alt="MRTK Optimize Window Settings"></p>
+<p><img src="../Images/Performance/OptimizeWindow_Settings.png" alt="MRTK Optimize Window Settings"></p>
 <h3 id="single-pass-instanced-rendering">Single Pass Instanced rendering</h3>
 <p><a href="https://docs.unity3d.com/Manual/SinglePassInstancing.html">Single Pass instanced rendering</a> is the most efficient rendering path for mixed reality applications. This configuration ensures the render pipeline is executed only once for both eyes and that draw calls are instanced across both eyes.</p>
 <h3 id="depth-buffer-sharing">Depth buffer sharing</h3>
@@ -114,7 +114,7 @@
 </div>
 <h2 id="scene-analysis">Scene analysis</h2>
 <p>The <em>Scene Analysis</em> tab is designed to inform developers on which elements currently in the scene will likely have the most impact on performance.</p>
-<p><img src="../../Documentation/Images/Performance/OptimizeWindow_SceneAnalysis.png" alt="MRTK Optimize Window Settings"></p>
+<p><img src="../Images/Performance/OptimizeWindow_SceneAnalysis.png" alt="MRTK Optimize Window Settings"></p>
 <h3 id="lighting-analysis">Lighting analysis</h3>
 <p>This section will examine the number of lights currently in the scene, as well as any lights that should disable shadows. Shadow casting is a very expensive operation.</p>
 <h3 id="polygon-count-analysis">Polygon count analysis</h3>
@@ -124,7 +124,7 @@
 <h2 id="shader-analysis">Shader analysis</h2>
 <p>The <a href="https://docs.unity3d.com/Manual/shader-StandardShader.html">Unity Standard shader</a> can produce very high quality visual results for games but is not generally best suited for the performance needs of mixed reality applications, especially since such applications are generally GPU bounded. Thus, it is recommended to developers to utilize the <a href="../README_MRTKStandardShader.html">MRTK Standard shader</a> to balance aesthetics &amp; graphical features with performance.</p>
 <p>The <em>Shader Analysis</em> tab scans the current project's Asset folder for materials using the Unity Standard shader or if desired, all materials not using Mixed Reality Toolkit provided shaders. Once discovered, developers can convert all materials or convert individually using the appropriate buttons.</p>
-<p><img src="../../Documentation/Images/Performance/OptimizeWindow_ShaderAnalysis.png" alt="MRTK Optimize Window Settings"></p>
+<p><img src="../Images/Performance/OptimizeWindow_ShaderAnalysis.png" alt="MRTK Optimize Window Settings"></p>
 <h2 id="see-also">See also</h2>
 <ul>
 <li><a href="../Performance/PerfGettingStarted.html">Performance</a></li>

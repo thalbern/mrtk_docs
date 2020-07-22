@@ -10,7 +10,7 @@
     <meta name="title" content="Bounding box | Mixed Reality Toolkit Documentation ">
     <meta name="generator" content="docfx 2.48.1.0">
     
-    <link rel="shortcut icon" href="../../../Documentation/Images/favicon.ico">
+    <link rel="shortcut icon" href=".././Documentation/Images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -35,7 +35,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../../../Documentation/Images/mrt_logo_icon.png" alt="">
+                <img id="logo" class="svg" src=".././Documentation/Images/mrt_logo_icon.png" alt="">
               </a>
             </div>
           
@@ -82,12 +82,12 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="bounding-box">Bounding box</h1>
 
-<p><img src="../Documentation/Images/BoundingBox/MRTK_BoundingBox_Main.png" alt="Bounding box"></p>
+<p><img src="Images/BoundingBox/MRTK_BoundingBox_Main.png" alt="Bounding box"></p>
 <p>The <a class="xref" href="../api/Microsoft.MixedReality.Toolkit.UI.BoundingBox.html"><code>BoundingBox.cs</code></a> script provides basic functionality for transforming objects in mixed reality. A bounding box will show a cube around the hologram to indicate that it can be interacted with. Handles on the corners and edges of the cube allow scaling or rotating the object. The bounding box also reacts to user input. On HoloLens 2, for example, the bounding box responds to finger proximity, providing visual feedback to help perceive the distance from the object. All interactions and visuals can be easily customized.</p>
 <p>For more information, see <a href="https://docs.microsoft.com/windows/mixed-reality/app-bar-and-bounding-box">Bounding box and App bar</a> in the Windows Dev Center.</p>
 <h2 id="example-scene">Example scene</h2>
 <p>You can find examples of bounding box configurations in the <code>BoundingBoxExamples</code> scene.</p>
-<img src="../Documentation/Images/BoundingBox/MRTK_BoundingBox_Examples.png">
+<img src="Images/BoundingBox/MRTK_BoundingBox_Examples.png">
 <h2 id="how-to-add-and-configure-a-bounding-box-using-unity-inspector">How to add and configure a bounding box using Unity Inspector</h2>
 <ol>
 <li>Add Box Collider to an object</li>
@@ -99,7 +99,7 @@
 <h5>Note</h5>
 <p>Use <em>Target Object</em> and <em>Bounds Override</em> field in the inspector to assign specific object and collider in the object with multiple child components.</p>
 </div>
-<p><img src="../Documentation/Images/BoundingBox/MRTK_BoundingBox_Assign.png" alt="Bounding Box"></p>
+<p><img src="Images/BoundingBox/MRTK_BoundingBox_Assign.png" alt="Bounding Box"></p>
 <h2 id="how-to-add-and-configure-a-bounding-box-in-the-code">How to add and configure a bounding box in the code</h2>
 <ol>
 <li><p>Instantiate cube GameObject</p>
@@ -186,12 +186,12 @@ scaleConstraint.ScaleMaximum = 2f;
 <li><strong>Scale Started</strong>: Fires when scaling starts.</li>
 <li><strong>Scale Ended</strong>: Fires when scaling ends.</li>
 </ul>
-<img src="../Documentation/Images/BoundingBox/MRTK_BoundingBox_Events.png" width="450">
+<img src="Images/BoundingBox/MRTK_BoundingBox_Events.png" width="450">
 <h2 id="handle-styles">Handle styles</h2>
 <p>By default, when you just assign the <a class="xref" href="../api/Microsoft.MixedReality.Toolkit.UI.BoundingBox.html"><code>BoundingBox.cs</code></a> script, it will show the handle of the HoloLens 1st gen style. To use HoloLens 2 style handles, you need to assign proper handle prefabs and materials.</p>
-<p><img src="../Documentation/Images/BoundingBox/MRTK_BoundingBox_HandleStyles1.png" alt="Bounding Box"></p>
+<p><img src="Images/BoundingBox/MRTK_BoundingBox_HandleStyles1.png" alt="Bounding Box"></p>
 <p>Below are the prefabs, materials, and the scaling values for the HoloLens 2 style bounding box handles. You can find this example in the <code>BoundingBoxExamples</code> scene.</p>
-<img src="../Documentation/Images/BoundingBox/MRTK_BoundingBox_HandleStyles2.png" width="450">
+<img src="Images/BoundingBox/MRTK_BoundingBox_HandleStyles2.png" width="450">
 <h3 id="handles-setup-for-hololens-2-style">Handles (Setup for HoloLens 2 style)</h3>
 <ul>
 <li><strong>Handle Material</strong>: BoundingBoxHandleWhite.mat</li>
@@ -206,7 +206,7 @@ scaleConstraint.ScaleMaximum = 2f;
 </ul>
 <h3 id="proximity-setup-for-hololens-2-style">Proximity (Setup for HoloLens 2 style)</h3>
 <p>Show and hide the handles with animation based on the distance to the hands. It has two-step scaling animation.</p>
-<img src="../Documentation/Images/BoundingBox/MRTK_BoundingBox_Proximity.png">
+<img src="Images/BoundingBox/MRTK_BoundingBox_Proximity.png">
 <ul>
 <li><strong>Proximity Effect Active</strong>: Enable proximity-based handle activation</li>
 <li><strong>Handle Medium Proximity</strong>: Distance for the 1st step scaling</li>
@@ -217,7 +217,7 @@ scaleConstraint.ScaleMaximum = 2f;
 </ul>
 <h2 id="making-an-object-movable-with-manipulation-handler">Making an object movable with manipulation handler</h2>
 <p>A bounding box can be combined with <a href="README_ManipulationHandler.html"><code>ManipulationHandler.cs</code></a> to make the object movable using far interaction. The manipulation handler supports both one and two-handed interactions. <a href="Input/HandTracking.html">Hand tracking</a> can be used to interact with an object up close.</p>
-<img src="../Documentation/Images/BoundingBox/MRTK_BoundingBox_ManipulationHandler.png" width="450">
+<img src="Images/BoundingBox/MRTK_BoundingBox_ManipulationHandler.png" width="450">
 <p>In order for the bounding box edges to behave the same way when moving it using <a href="README_ManipulationHandler.html"><code>ManipulationHandler</code></a>'s far interaction, it is advised to connect its events for <em>On Manipulation Started</em> / <em>On Manipulation Ended</em> to <code>BoundingBox.HighlightWires</code> / <code>BoundingBox.UnhighlightWires</code> respectively, as shown in the screenshot above.</p>
 </article>
           </div>

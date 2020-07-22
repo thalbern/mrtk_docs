@@ -10,7 +10,7 @@
     <meta name="title" content="Near menu | Mixed Reality Toolkit Documentation ">
     <meta name="generator" content="docfx 2.48.1.0">
     
-    <link rel="shortcut icon" href="../../../Documentation/Images/favicon.ico">
+    <link rel="shortcut icon" href=".././Documentation/Images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -35,7 +35,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../../../Documentation/Images/mrt_logo_icon.png" alt="">
+                <img id="logo" class="svg" src=".././Documentation/Images/mrt_logo_icon.png" alt="">
               </a>
             </div>
           
@@ -82,7 +82,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="near-menu">Near menu</h1>
 
-<p><img src="../Documentation/Images/NearMenu/MRTK_UX_NearMenu.png" alt="Near Menu"></p>
+<p><img src="Images/NearMenu/MRTK_UX_NearMenu.png" alt="Near Menu"></p>
 <p>Near Menu is a UX control which provides a collection of buttons or other UI components. It is floating around the user's body and easily accessible anytime. Since it is loosely coupled with the user, it does not disturb the user's interaction with the target content. The user can use the 'Pin' button to world-lock/unlock the menu. The menu can be grabbed and placed at a specific position.</p>
 <h2 id="interaction-behavior">Interaction behavior</h2>
 <ul>
@@ -90,7 +90,7 @@
 <li><strong>Pin</strong>: Using the 'Pin' button, the menu can be world-locked and released.</li>
 <li><strong>Grab and move</strong>: The menu is always grabbable and movable. Regardless of the previous state, the menu will be pinned(world-locked) when grabbed and released. There are visual cues for the grabbable area. They are revealed on hand proximity.</li>
 </ul>
-<img src="../Documentation/Images/NearMenu/MRTK_UX_NearMenu_Grab.png">
+<img src="Images/NearMenu/MRTK_UX_NearMenu_Grab.png">
 <h2 id="prefabs">Prefabs</h2>
 <p>Near Menu prefabs are designed to demonstrate how to use MRTK's various components to build menus for near interactions.</p>
 <ul>
@@ -103,7 +103,7 @@
 </ul>
 <h2 id="example-scene">Example scene</h2>
 <p>You can find examples of Near Menu prefabs in the <code>NearMenuExamples</code> scene.</p>
-<img src="../Documentation/Images/NearMenu/MRTK_UX_NearMenu_Examples.png">
+<img src="Images/NearMenu/MRTK_UX_NearMenu_Examples.png">
 <h2 id="structure">Structure</h2>
 <p>Near Menu prefabs are made with following MRTK components.</p>
 <ul>
@@ -112,19 +112,19 @@
 <li><a href="README_ManipulationHandler.html"><strong>Manipulation Handler</strong></a>: Grab and move the menu</li>
 <li><a href="README_Solver.html"><strong>RadialView Solver</strong></a>: Follow Me(tag-along) behavior</li>
 </ul>
-<p><img src="../Documentation/Images/NearMenu/MRTK_UX_NearMenu_Structure.png" alt="Near Menu Prefab"></p>
+<p><img src="Images/NearMenu/MRTK_UX_NearMenu_Structure.png" alt="Near Menu Prefab"></p>
 <h2 id="how-to-customize">How to customize</h2>
 <p><strong>1. Add/Remove Buttons</strong></p>
 <p>Under <code>ButtonCollection</code> object, add or remove buttons.<br>
-<img src="../Documentation/Images/NearMenu/MRTK_UX_NearMenu_Custom0.png" width="450"></p>
+<img src="Images/NearMenu/MRTK_UX_NearMenu_Custom0.png" width="450"></p>
 <p><strong>2. Update the Grid Object Collection</strong></p>
 <p>Click <code>Update Collection</code> button in the Inspector of the <code>ButtonCollection</code> object. It will update the grid layout.<br>
-<img src="../Documentation/Images/NearMenu/MRTK_UX_NearMenu_Custom1.png"></p>
+<img src="Images/NearMenu/MRTK_UX_NearMenu_Custom1.png"></p>
 <p>You can configure the number of rows using <code>Rows</code> property of the Grid Object Collection.<br>
-<img src="../Documentation/Images/NearMenu/MRTK_UX_NearMenu_Custom2.png"></p>
+<img src="Images/NearMenu/MRTK_UX_NearMenu_Custom2.png"></p>
 <p><strong>3. Adjust the backplate size</strong></p>
 <p>Adjust the size of the <code>Quad</code> under <code>Backplate</code> object. The width and height of the backplate should be <code>0.032 * [Number of the buttons + 1]</code>. For example, if you have 3 x 2 buttons, the width of the backplate is <code>0.032 * 4</code> and the height is <code>0.032 * 3</code>. You can directly put this expression into the Unity's field.<br>
-<img src="../Documentation/Images/NearMenu/MRTK_UX_NearMenu_Custom3.png" width="450"></p>
+<img src="Images/NearMenu/MRTK_UX_NearMenu_Custom3.png" width="450"></p>
 <ul>
 <li>Default size of the HoloLens 2 button is 3.2x3.2 cm (0.032m)</li>
 </ul>

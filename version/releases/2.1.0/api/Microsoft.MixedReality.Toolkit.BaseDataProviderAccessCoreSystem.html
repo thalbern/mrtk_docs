@@ -12,7 +12,7 @@
    | Mixed Reality Toolkit Documentation ">
     <meta name="generator" content="docfx 2.48.1.0">
     
-    <link rel="shortcut icon" href="../../../Documentation/Images/favicon.ico">
+    <link rel="shortcut icon" href=".././Documentation/Images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../../../Documentation/Images/mrt_logo_icon.png" alt="">
+                <img id="logo" class="svg" src=".././Documentation/Images/mrt_logo_icon.png" alt="">
               </a>
             </div>
           
@@ -267,8 +267,7 @@ protected BaseDataProviderAccessCoreSystem(IMixedRealityServiceRegistrar registr
   
   <a id="Microsoft_MixedReality_Toolkit_BaseDataProviderAccessCoreSystem_Enable_" data-uid="Microsoft.MixedReality.Toolkit.BaseDataProviderAccessCoreSystem.Enable*"></a>
   <h4 id="Microsoft_MixedReality_Toolkit_BaseDataProviderAccessCoreSystem_Enable" data-uid="Microsoft.MixedReality.Toolkit.BaseDataProviderAccessCoreSystem.Enable">Enable()</h4>
-  <div class="markdown level1 summary"><p>Optional Enable function to enable / re-enable the service.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -280,8 +279,7 @@ protected BaseDataProviderAccessCoreSystem(IMixedRealityServiceRegistrar registr
   
   <a id="Microsoft_MixedReality_Toolkit_BaseDataProviderAccessCoreSystem_GetDataProvider_" data-uid="Microsoft.MixedReality.Toolkit.BaseDataProviderAccessCoreSystem.GetDataProvider*"></a>
   <h4 id="Microsoft_MixedReality_Toolkit_BaseDataProviderAccessCoreSystem_GetDataProvider_System_String_" data-uid="Microsoft.MixedReality.Toolkit.BaseDataProviderAccessCoreSystem.GetDataProvider(System.String)">GetDataProvider(String)</h4>
-  <div class="markdown level1 summary"><p>Get the data provider that is registered under the specified name.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -300,8 +298,7 @@ protected BaseDataProviderAccessCoreSystem(IMixedRealityServiceRegistrar registr
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">name</span></td>
-        <td><p>The friendly name of the data provider.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -316,24 +313,20 @@ protected BaseDataProviderAccessCoreSystem(IMixedRealityServiceRegistrar registr
     <tbody>
       <tr>
         <td><a class="xref" href="Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider.html">IMixedRealityDataProvider</a></td>
-        <td><p>The requested data provider, or null if one cannot be found.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_MixedReality_Toolkit_BaseDataProviderAccessCoreSystem_GetDataProvider_System_String__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If more than one data provider is registered under the specified name, the first will be returned.</p>
-</div>
   
   
   <a id="Microsoft_MixedReality_Toolkit_BaseDataProviderAccessCoreSystem_GetDataProvider_" data-uid="Microsoft.MixedReality.Toolkit.BaseDataProviderAccessCoreSystem.GetDataProvider*"></a>
   <h4 id="Microsoft_MixedReality_Toolkit_BaseDataProviderAccessCoreSystem_GetDataProvider__1_System_String_" data-uid="Microsoft.MixedReality.Toolkit.BaseDataProviderAccessCoreSystem.GetDataProvider``1(System.String)">GetDataProvider&lt;T&gt;(String)</h4>
-  <div class="markdown level1 summary"><p>Get the data provider that is registered under the specified name (optional) and matching the specified type.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual T GetDataProvider&lt;T&gt;(string name = null)
+
     where T : IMixedRealityDataProvider</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -349,8 +342,7 @@ protected BaseDataProviderAccessCoreSystem(IMixedRealityServiceRegistrar registr
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">name</span></td>
-        <td><p>The friendly name of the data provider.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -365,8 +357,7 @@ protected BaseDataProviderAccessCoreSystem(IMixedRealityServiceRegistrar registr
     <tbody>
       <tr>
         <td><span class="xref">T</span></td>
-        <td><p>The requested data provider, or null if one cannot be found.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -381,20 +372,15 @@ protected BaseDataProviderAccessCoreSystem(IMixedRealityServiceRegistrar registr
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td><p>The desired data provider type.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_MixedReality_Toolkit_BaseDataProviderAccessCoreSystem_GetDataProvider__1_System_String__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>If more than one data provider is registered under the specified name, the first will be returned.</p>
-</div>
   
   
   <a id="Microsoft_MixedReality_Toolkit_BaseDataProviderAccessCoreSystem_GetDataProviders_" data-uid="Microsoft.MixedReality.Toolkit.BaseDataProviderAccessCoreSystem.GetDataProviders*"></a>
   <h4 id="Microsoft_MixedReality_Toolkit_BaseDataProviderAccessCoreSystem_GetDataProviders" data-uid="Microsoft.MixedReality.Toolkit.BaseDataProviderAccessCoreSystem.GetDataProviders">GetDataProviders()</h4>
-  <div class="markdown level1 summary"><p>Gets the collection of registered data providers.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -411,8 +397,7 @@ protected BaseDataProviderAccessCoreSystem(IMixedRealityServiceRegistrar registr
     <tbody>
       <tr>
         <td><span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider.html">IMixedRealityDataProvider</a>&gt;</td>
-        <td><p>Read only copy of the list of registered data providers.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -420,12 +405,12 @@ protected BaseDataProviderAccessCoreSystem(IMixedRealityServiceRegistrar registr
   
   <a id="Microsoft_MixedReality_Toolkit_BaseDataProviderAccessCoreSystem_GetDataProviders_" data-uid="Microsoft.MixedReality.Toolkit.BaseDataProviderAccessCoreSystem.GetDataProviders*"></a>
   <h4 id="Microsoft_MixedReality_Toolkit_BaseDataProviderAccessCoreSystem_GetDataProviders__1" data-uid="Microsoft.MixedReality.Toolkit.BaseDataProviderAccessCoreSystem.GetDataProviders``1">GetDataProviders&lt;T&gt;()</h4>
-  <div class="markdown level1 summary"><p>Get the collection of registered observers of the specified type.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public virtual IReadOnlyList&lt;T&gt; GetDataProviders&lt;T&gt;()
+
     where T : IMixedRealityDataProvider</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
@@ -439,8 +424,7 @@ protected BaseDataProviderAccessCoreSystem(IMixedRealityServiceRegistrar registr
     <tbody>
       <tr>
         <td><span class="xref">IReadOnlyList</span>&lt;T&gt;</td>
-        <td><p>Read-only copy of the list of registered data providers that implement the specified type.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -455,8 +439,7 @@ protected BaseDataProviderAccessCoreSystem(IMixedRealityServiceRegistrar registr
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td><p>The desired data provider type</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -464,8 +447,7 @@ protected BaseDataProviderAccessCoreSystem(IMixedRealityServiceRegistrar registr
   
   <a id="Microsoft_MixedReality_Toolkit_BaseDataProviderAccessCoreSystem_LateUpdate_" data-uid="Microsoft.MixedReality.Toolkit.BaseDataProviderAccessCoreSystem.LateUpdate*"></a>
   <h4 id="Microsoft_MixedReality_Toolkit_BaseDataProviderAccessCoreSystem_LateUpdate" data-uid="Microsoft.MixedReality.Toolkit.BaseDataProviderAccessCoreSystem.LateUpdate">LateUpdate()</h4>
-  <div class="markdown level1 summary"><p>Optional LateUpdate function to that is called after Update has been called on all services.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -483,6 +465,7 @@ protected BaseDataProviderAccessCoreSystem(IMixedRealityServiceRegistrar registr
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected bool RegisterDataProvider&lt;T&gt;(T dataProviderInstance)
+
     where T : IMixedRealityDataProvider</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -545,6 +528,7 @@ protected BaseDataProviderAccessCoreSystem(IMixedRealityServiceRegistrar registr
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Obsolete(&quot;RegisterDataProvider&lt;T&gt;(Type, SupportedPlatforms, param object[]) is obsolete and will be removed from a future version of MRTK\nPlease use RegisterDataProvider&lt;T&gt;(Type, string, SupportedPlatforms, params object[])&quot;)]
 protected bool RegisterDataProvider&lt;T&gt;(Type concreteType, SupportedPlatforms supportedPlatforms = null, params object[] args)
+
     where T : IMixedRealityDataProvider</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -614,6 +598,7 @@ protected bool RegisterDataProvider&lt;T&gt;(Type concreteType, SupportedPlatfor
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected bool RegisterDataProvider&lt;T&gt;(Type concreteType, string providerName, SupportedPlatforms supportedPlatforms = null, params object[] args)
+
     where T : IMixedRealityDataProvider</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -700,6 +685,7 @@ protected bool RegisterDataProvider&lt;T&gt;(Type concreteType, SupportedPlatfor
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected bool UnregisterDataProvider&lt;T&gt;(T dataProviderInstance)
+
     where T : IMixedRealityDataProvider</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -761,6 +747,7 @@ protected bool RegisterDataProvider&lt;T&gt;(Type concreteType, SupportedPlatfor
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected bool UnregisterDataProvider&lt;T&gt;(string name = null)
+
     where T : IMixedRealityDataProvider</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -820,8 +807,7 @@ protected bool RegisterDataProvider&lt;T&gt;(Type concreteType, SupportedPlatfor
   
   <a id="Microsoft_MixedReality_Toolkit_BaseDataProviderAccessCoreSystem_Update_" data-uid="Microsoft.MixedReality.Toolkit.BaseDataProviderAccessCoreSystem.Update*"></a>
   <h4 id="Microsoft_MixedReality_Toolkit_BaseDataProviderAccessCoreSystem_Update" data-uid="Microsoft.MixedReality.Toolkit.BaseDataProviderAccessCoreSystem.Update">Update()</h4>
-  <div class="markdown level1 summary"><p>Optional Update function to perform per-frame updates of the service.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

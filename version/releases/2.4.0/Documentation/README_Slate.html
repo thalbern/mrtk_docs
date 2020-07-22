@@ -10,7 +10,7 @@
     <meta name="title" content="Slate | Mixed Reality Toolkit Documentation ">
     <meta name="generator" content="docfx 2.48.1.0">
     
-    <link rel="shortcut icon" href="../../../Documentation/Images/favicon.ico">
+    <link rel="shortcut icon" href=".././Documentation/Images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -35,7 +35,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../../../Documentation/Images/mrt_logo_icon.png" alt="">
+                <img id="logo" class="svg" src=".././Documentation/Images/mrt_logo_icon.png" alt="">
               </a>
             </div>
           
@@ -82,7 +82,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="slate">Slate</h1>
 
-<p><img src="../Documentation/Images/Slate/MRTK_Slate_Main.png" alt="Slate"></p>
+<p><img src="Images/Slate/MRTK_Slate_Main.png" alt="Slate"></p>
 <p>The Slate prefab offers a thin window style control for displaying 2D content, for example plain text or articles including media. It offers a grabbable title bar as well as <em>Follow Me</em> and <em>Close</em> functionality. The content window can be scrolled via articulated hand input.</p>
 <h2 id="how-to-use-a-slate-control">How to use a slate control</h2>
 <p>A slate control is composed of the following elements:</p>
@@ -93,27 +93,27 @@
 <li><strong>BackPlate</strong>: The back side of the slate.</li>
 <li><strong>ContentQuad</strong>: Content is assigned as material. The example uses a sample material 'PanContent'.</li>
 </ul>
-<img src="../Documentation/Images/Slate/MRTK_SlateStructure.jpg" width="650">
+<img src="Images/Slate/MRTK_SlateStructure.jpg" width="650">
 <h2 id="bounding-box">Bounding box</h2>
 <p>A slate control contains a bounding box script for scaling and rotating. For more information on bounding box, please see the <a href="README_BoundingBox.html">Bounding box</a> page.</p>
-<img src="../Documentation/Images/Slate/MRTK_Slate_BB.jpg" width="650">
+<img src="Images/Slate/MRTK_Slate_BB.jpg" width="650">
 <h2 id="buttons">Buttons</h2>
 <p>A standard slate offers two buttons as default on the top right of the title bar:</p>
 <ul>
 <li><strong>Follow Me</strong>: Toggles an orbital solver components to make the slate object follow the user.</li>
 <li><strong>Close</strong>: Disables the slate object.</li>
 </ul>
-<img src="../Documentation/Images/Slate/MRTK_Slate_Buttons.jpg" width="650">
+<img src="Images/Slate/MRTK_Slate_Buttons.jpg" width="650">
 <h2 id="scripts">Scripts</h2>
 <p>In general, the <code>NearInteractionTouchable.cs</code> script must be attached to any object that is intended to receive touch events from the <code>IMixedRealityTouchHandler</code>.</p>
-<img src="../Documentation/Images/Slate/MRTK_Slate_Scripts.png">
+<img src="Images/Slate/MRTK_Slate_Scripts.png">
 <ul>
 <li><p><code>HandInteractionPan.cs</code> This script handles articulated hand input for touching and moving the content on the slate's <em>ContentQuad</em>.</p>
 </li>
 <li><p><code>HandInteractionPanZoom.cs</code>: In addition to the panning interaction, this script supports two-handed zooming.</p>
 </li>
 </ul>
-<img src="../Documentation/Images/Slate/MRTK_Slate_PanZoom.png" width="500">
+<img src="Images/Slate/MRTK_Slate_PanZoom.png" width="500">
 </article>
           </div>
           

@@ -10,7 +10,7 @@
     <meta name="title" content="Dictation | Mixed Reality Toolkit Documentation ">
     <meta name="generator" content="docfx 2.48.1.0">
     
-    <link rel="shortcut icon" href="../../../../Documentation/Images/favicon.ico">
+    <link rel="shortcut icon" href="../.././Documentation/Images/favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
@@ -35,7 +35,7 @@
               </button>
               
               <a class="navbar-brand" href="../../index.html">
-                <img id="logo" class="svg" src="../../../../Documentation/Images/mrt_logo_icon.png" alt="">
+                <img id="logo" class="svg" src="../.././Documentation/Images/mrt_logo_icon.png" alt="">
               </a>
             </div>
           
@@ -92,9 +92,9 @@ capabilities in the <a href="https://docs.unity3d.com/Manual/class-PlayerSetting
 See <a href="https://docs.microsoft.com/windows/mixed-reality/voice-input-in-unity#dictation">Windows Mixed Reality Documentation</a>
 for more details on voice input in Unity.</p>
 <h2 id="configuration">Configuration</h2>
-<img src="../../Documentation/Images/Input/DictationDataProvider.png" width="80%" class="center">
+<img src="../Images/Input/DictationDataProvider.png" width="80%" class="center">
 <p>Once you have a dictation service set up, you can use the <a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.DictationHandler.html"><code>DictationHandler</code></a> script to start and stop recording sessions and obtain the transcription results via UnityEvents.</p>
-<img src="../../Documentation/Images/Input/DictationHandler.png" width="80%" class="center">
+<img src="../Images/Input/DictationHandler.png" width="80%" class="center">
 <ul>
 <li><strong>Dictation Hypothesis</strong> is raised as the user speaks with early, rough transcriptions of the audio captured so far.</li>
 <li><strong>Dictation Result</strong> is raised at the end of each sentence (i.e. when the user pauses) with the final transcription of the audio captured so far.</li>
@@ -103,7 +103,7 @@ for more details on voice input in Unity.</p>
 </ul>
 <h2 id="example-scene">Example scene</h2>
 <p><strong>Dictation</strong> scene in <code>MRTK/Examples/Demos/Input/Scenes/Dictation</code> shows the <code>DictationHandler</code> script in use. If you need more control, you can either extend this script or create your own implementing <a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Input.IMixedRealityDictationHandler.html"><code>IMixedRealityDictationHandler</code></a> to receive dictation events directly.</p>
-<img src="../../Documentation/Images/Input/DictationDemo.png" width="80%" class="center">
+<img src="../Images/Input/DictationDemo.png" width="80%" class="center">
 </article>
           </div>
           

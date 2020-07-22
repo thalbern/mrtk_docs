@@ -10,7 +10,7 @@
     <meta name="title" content="Eye-supported navigation in MRTK | Mixed Reality Toolkit Documentation ">
     <meta name="generator" content="docfx 2.48.1.0">
     
-    <link rel="shortcut icon" href="../../../../Documentation/Images/favicon.ico">
+    <link rel="shortcut icon" href="../.././Documentation/Images/favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
@@ -35,7 +35,7 @@
               </button>
               
               <a class="navbar-brand" href="../../index.html">
-                <img id="logo" class="svg" src="../../../../Documentation/Images/mrt_logo_icon.png" alt="">
+                <img id="logo" class="svg" src="../.././Documentation/Images/mrt_logo_icon.png" alt="">
               </a>
             </div>
           
@@ -82,7 +82,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="eye-supported-navigation-in-mrtk">Eye-supported navigation in MRTK</h1>
 
-<p><img src="../../Documentation/Images/EyeTracking/mrtk_et_navigation.png" alt="MRTK"></p>
+<p><img src="../Images/EyeTracking/mrtk_et_navigation.png" alt="MRTK"></p>
 <p>Imagine you are reading information on a slate and when you reach the end of the displayed text, the text automatically scrolls up to reveal more content. Or you can fluently zoom in where you are looking at. The map also automatically adjusts the content to keep the things of interest within your field of view. Another interesting application is the hands-free observation of 3D holograms by automatically bringing the parts of the hologram that you are looking at to the front. These are some of the examples that are described on this page in context of eye-supported navigation.</p>
 <p>The following descriptions assume that you are already familiar with how to <a href="EyeTracking_BasicSetup.html">set up eye tracking in your MRTK scene</a> and with the basics of <a href="EyeTracking_TargetSelection.html">accessing eye tracking data</a> in MRTK Unity.
 The examples discussed in the following are all part of the <code>EyeTrackingDemo-03-Navigation</code> (Assets/MRTK/Examples/Demos/EyeTracking/Scenes/EyeTrackingDemo-03-Navigation)
@@ -144,11 +144,11 @@ In the following, the parameters of <a class="xref" href="../../api/Microsoft.Mi
 </tr>
 </tbody>
 </table>
-<p><img src="../../Documentation/Images/EyeTracking/mrtk_et_nav_scroll.jpg" alt="Eye-supported scroll setup in Unity"></p>
+<p><img src="../Images/EyeTracking/mrtk_et_nav_scroll.jpg" alt="Eye-supported scroll setup in Unity"></p>
 <h3 id="eyetrackingtarget">EyeTrackingTarget</h3>
 <p>Attaching the <em>EyeTrackingTarget</em> component allows for flexibly handle eye-gaze-related events.
 The scroll sample demonstrates scrolling text that starts when the user <em>looks</em> at the panel and stops when the user is <em>looking away</em> from it.
-<img src="../../Documentation/Images/EyeTracking/mrtk_et_nav_scroll_ettarget.jpg" alt="Eye-supported scroll setup in Unity: EyeTrackingTarget"></p>
+<img src="../Images/EyeTracking/mrtk_et_nav_scroll_ettarget.jpg" alt="Eye-supported scroll setup in Unity: EyeTrackingTarget"></p>
 <h2 id="gaze-supported-pan-and-zoom">Gaze-supported pan and zoom</h2>
 <p>Who hasn't used a virtual map before to search for their home or to explore entirely new places? Eye tracking allows you to directly dive into exactly the parts that you're interested in and once zoomed in, you can smoothly follow the course of a street to explore your neighborhood!
 This is not only useful for exploring geographical maps, but also to checking out details in photographs, data visualizations or even live-streamed medical imagery. To use this capability in your app is easy! For content rendered to a <a href="https://docs.unity3d.com/ScriptReference/Texture.html">Texture</a> (e.g., a photo, streamed data), simply add the <a class="xref" href="../../api/Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.PanZoomTexture.html">PanZoomTexture</a> script.
@@ -227,7 +227,7 @@ For a <a href="https://docs.unity3d.com/ScriptReference/RectTransform.html">Rect
 </tr>
 </tbody>
 </table>
-<p><img src="../../Documentation/Images/EyeTracking/mrtk_et_nav_panzoom.jpg" alt="Eye-supported pan and zoom setup in Unity"></p>
+<p><img src="../Images/EyeTracking/mrtk_et_nav_panzoom.jpg" alt="Eye-supported pan and zoom setup in Unity"></p>
 <h2 id="attention-based-3d-rotation">Attention-based 3D rotation</h2>
 <p>Imagine looking at a 3D object and the parts you want to see more closely magically turn toward you - as if the system would read your mind and know to turn the item toward you!
 That is the idea for attention-based 3D rotations which enable you to investigate all side of a hologram without lifting a finger.

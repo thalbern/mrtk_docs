@@ -12,7 +12,7 @@
    | Mixed Reality Toolkit Documentation ">
     <meta name="generator" content="docfx 2.48.1.0">
     
-    <link rel="shortcut icon" href="../../../Documentation/Images/favicon.ico">
+    <link rel="shortcut icon" href=".././Documentation/Images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../../../Documentation/Images/mrt_logo_icon.png" alt="">
+                <img id="logo" class="svg" src=".././Documentation/Images/mrt_logo_icon.png" alt="">
               </a>
             </div>
           
@@ -140,6 +140,7 @@ runtime without requiring direct code reference to a singleton style component.<
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool AddService&lt;T&gt;(T serviceInstance, IMixedRealityServiceRegistrar registrar)
+
     where T : IMixedRealityService</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -297,6 +298,7 @@ If given a registrar that the registry is not aware of, returns null.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool RemoveService&lt;T&gt;(T serviceInstance)
+
     where T : IMixedRealityService</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -359,6 +361,7 @@ If given a registrar that the registry is not aware of, returns null.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool RemoveService&lt;T&gt;(T serviceInstance, IMixedRealityServiceRegistrar registrar)
+
     where T : IMixedRealityService</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -427,6 +430,7 @@ If given a registrar that the registry is not aware of, returns null.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool RemoveService&lt;T&gt;(string name)
+
     where T : IMixedRealityService</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -552,6 +556,7 @@ If given a registrar that the registry is not aware of, returns null.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool TryGetService&lt;T&gt;(out T serviceInstance, out IMixedRealityServiceRegistrar registrar, string name = null)
+
     where T : IMixedRealityService</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -626,6 +631,7 @@ If given a registrar that the registry is not aware of, returns null.</p>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool TryGetService&lt;T&gt;(out T serviceInstance, string name = null)
+
     where T : IMixedRealityService</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>

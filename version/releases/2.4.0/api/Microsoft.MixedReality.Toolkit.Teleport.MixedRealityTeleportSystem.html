@@ -234,7 +234,8 @@ public MixedRealityTeleportSystem(IMixedRealityServiceRegistrar registrar)</code
   
   <a id="Microsoft_MixedReality_Toolkit_Teleport_MixedRealityTeleportSystem_Name_" data-uid="Microsoft.MixedReality.Toolkit.Teleport.MixedRealityTeleportSystem.Name*"></a>
   <h4 id="Microsoft_MixedReality_Toolkit_Teleport_MixedRealityTeleportSystem_Name" data-uid="Microsoft.MixedReality.Toolkit.Teleport.MixedRealityTeleportSystem.Name">Name</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Optional Priority attribute if multiple services of the same type are required, enables targeting a service for action.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -261,7 +262,8 @@ public MixedRealityTeleportSystem(IMixedRealityServiceRegistrar registrar)</code
   
   <a id="Microsoft_MixedReality_Toolkit_Teleport_MixedRealityTeleportSystem_TeleportDuration_" data-uid="Microsoft.MixedReality.Toolkit.Teleport.MixedRealityTeleportSystem.TeleportDuration*"></a>
   <h4 id="Microsoft_MixedReality_Toolkit_Teleport_MixedRealityTeleportSystem_TeleportDuration" data-uid="Microsoft.MixedReality.Toolkit.Teleport.MixedRealityTeleportSystem.TeleportDuration">TeleportDuration</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The duration of the teleport in seconds.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -288,7 +290,8 @@ public MixedRealityTeleportSystem(IMixedRealityServiceRegistrar registrar)</code
   
   <a id="Microsoft_MixedReality_Toolkit_Teleport_MixedRealityTeleportSystem_Destroy_" data-uid="Microsoft.MixedReality.Toolkit.Teleport.MixedRealityTeleportSystem.Destroy*"></a>
   <h4 id="Microsoft_MixedReality_Toolkit_Teleport_MixedRealityTeleportSystem_Destroy" data-uid="Microsoft.MixedReality.Toolkit.Teleport.MixedRealityTeleportSystem.Destroy">Destroy()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Optional Destroy function to perform cleanup of the service before the Mixed Reality Toolkit is destroyed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -305,7 +308,6 @@ public MixedRealityTeleportSystem(IMixedRealityServiceRegistrar registrar)</code
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override void HandleEvent&lt;T&gt;(BaseEventData eventData, ExecuteEvents.EventFunction&lt;T&gt; eventHandler)
-
     where T : IEventSystemHandler</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -351,7 +353,9 @@ public MixedRealityTeleportSystem(IMixedRealityServiceRegistrar registrar)</code
   
   <a id="Microsoft_MixedReality_Toolkit_Teleport_MixedRealityTeleportSystem_Initialize_" data-uid="Microsoft.MixedReality.Toolkit.Teleport.MixedRealityTeleportSystem.Initialize*"></a>
   <h4 id="Microsoft_MixedReality_Toolkit_Teleport_MixedRealityTeleportSystem_Initialize" data-uid="Microsoft.MixedReality.Toolkit.Teleport.MixedRealityTeleportSystem.Initialize">Initialize()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The initialize function is used to setup the service once created.
+This method is called once all services have been registered in the Mixed Reality Toolkit.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -363,7 +367,8 @@ public MixedRealityTeleportSystem(IMixedRealityServiceRegistrar registrar)</code
   
   <a id="Microsoft_MixedReality_Toolkit_Teleport_MixedRealityTeleportSystem_RaiseTeleportCanceled_" data-uid="Microsoft.MixedReality.Toolkit.Teleport.MixedRealityTeleportSystem.RaiseTeleportCanceled*"></a>
   <h4 id="Microsoft_MixedReality_Toolkit_Teleport_MixedRealityTeleportSystem_RaiseTeleportCanceled_IMixedRealityPointer_Microsoft_MixedReality_Toolkit_Teleport_IMixedRealityTeleportHotSpot_" data-uid="Microsoft.MixedReality.Toolkit.Teleport.MixedRealityTeleportSystem.RaiseTeleportCanceled(IMixedRealityPointer,Microsoft.MixedReality.Toolkit.Teleport.IMixedRealityTeleportHotSpot)">RaiseTeleportCanceled(IMixedRealityPointer, IMixedRealityTeleportHotSpot)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Raise a teleportation canceled event.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -382,12 +387,14 @@ public MixedRealityTeleportSystem(IMixedRealityServiceRegistrar registrar)</code
       <tr>
         <td><span class="xref">IMixedRealityPointer</span></td>
         <td><span class="parametername">pointer</span></td>
-        <td></td>
+        <td><p>The pointer that raised the event.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.MixedReality.Toolkit.Teleport.IMixedRealityTeleportHotSpot.html">IMixedRealityTeleportHotSpot</a></td>
         <td><span class="parametername">hotSpot</span></td>
-        <td></td>
+        <td><p>The teleport target</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -395,7 +402,8 @@ public MixedRealityTeleportSystem(IMixedRealityServiceRegistrar registrar)</code
   
   <a id="Microsoft_MixedReality_Toolkit_Teleport_MixedRealityTeleportSystem_RaiseTeleportRequest_" data-uid="Microsoft.MixedReality.Toolkit.Teleport.MixedRealityTeleportSystem.RaiseTeleportRequest*"></a>
   <h4 id="Microsoft_MixedReality_Toolkit_Teleport_MixedRealityTeleportSystem_RaiseTeleportRequest_IMixedRealityPointer_Microsoft_MixedReality_Toolkit_Teleport_IMixedRealityTeleportHotSpot_" data-uid="Microsoft.MixedReality.Toolkit.Teleport.MixedRealityTeleportSystem.RaiseTeleportRequest(IMixedRealityPointer,Microsoft.MixedReality.Toolkit.Teleport.IMixedRealityTeleportHotSpot)">RaiseTeleportRequest(IMixedRealityPointer, IMixedRealityTeleportHotSpot)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Raise a teleportation request event.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -414,12 +422,14 @@ public MixedRealityTeleportSystem(IMixedRealityServiceRegistrar registrar)</code
       <tr>
         <td><span class="xref">IMixedRealityPointer</span></td>
         <td><span class="parametername">pointer</span></td>
-        <td></td>
+        <td><p>The pointer that raised the event.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.MixedReality.Toolkit.Teleport.IMixedRealityTeleportHotSpot.html">IMixedRealityTeleportHotSpot</a></td>
         <td><span class="parametername">hotSpot</span></td>
-        <td></td>
+        <td><p>The teleport target</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -427,7 +437,8 @@ public MixedRealityTeleportSystem(IMixedRealityServiceRegistrar registrar)</code
   
   <a id="Microsoft_MixedReality_Toolkit_Teleport_MixedRealityTeleportSystem_RaiseTeleportStarted_" data-uid="Microsoft.MixedReality.Toolkit.Teleport.MixedRealityTeleportSystem.RaiseTeleportStarted*"></a>
   <h4 id="Microsoft_MixedReality_Toolkit_Teleport_MixedRealityTeleportSystem_RaiseTeleportStarted_IMixedRealityPointer_Microsoft_MixedReality_Toolkit_Teleport_IMixedRealityTeleportHotSpot_" data-uid="Microsoft.MixedReality.Toolkit.Teleport.MixedRealityTeleportSystem.RaiseTeleportStarted(IMixedRealityPointer,Microsoft.MixedReality.Toolkit.Teleport.IMixedRealityTeleportHotSpot)">RaiseTeleportStarted(IMixedRealityPointer, IMixedRealityTeleportHotSpot)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Raise a teleportation started event.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -446,12 +457,14 @@ public MixedRealityTeleportSystem(IMixedRealityServiceRegistrar registrar)</code
       <tr>
         <td><span class="xref">IMixedRealityPointer</span></td>
         <td><span class="parametername">pointer</span></td>
-        <td></td>
+        <td><p>The pointer that raised the event.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Microsoft.MixedReality.Toolkit.Teleport.IMixedRealityTeleportHotSpot.html">IMixedRealityTeleportHotSpot</a></td>
         <td><span class="parametername">hotSpot</span></td>
-        <td></td>
+        <td><p>The teleport target</p>
+</td>
       </tr>
     </tbody>
   </table>
